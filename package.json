@@ -1,0 +1,18 @@
+{
+  "name": "ng2-pipe",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dormd/ng2-pipe.git"
+  },
+  "author": "dormd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dormd/ng2-pipe/issues"
+  },
+  "homepage": "https://github.com/dormd/ng2-pipe#readme"
+}
