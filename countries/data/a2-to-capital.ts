@@ -1,4 +1,4 @@
-export const A2toCapital = {
+export const A2ToCapital = {
 	'AF': 'Kabul',
 	'AX': 'Mariehamn',
 	'AL': 'Tirana',
