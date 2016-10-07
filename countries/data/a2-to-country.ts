@@ -1,4 +1,4 @@
-export const A2ToCountries = {
+export const A2ToCountry = {
 	'AF': 'Afghanistan',
 	'AX': 'Aland Islands',
 	'AL': 'Albania',
