@@ -1,20 +1,40 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { NgModule }          from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { SharedModule,
+         PipesModule }       from './modules';
+
+import { AppComponent }      from './app.component';
+
+const modules = [
+    SharedModule,
+    PipesModule
+];
+
+const components = [
+    AppComponent
+];
+
+const directives = [];
+
+const pipes = [];
+
+const providers = [];
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    exports: [
+        PipesModule
+    ],
+    declarations: [
+      ...components,
+      ...directives,
+      ...pipes
+    ],
+    imports: [
+      ...modules
+    ],
+    providers: [
+      ...providers
+    ],
+    bootstrap: [ AppComponent ]
 })
 export class AppModule { }
