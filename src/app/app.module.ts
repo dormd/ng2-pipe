@@ -1,13 +1,15 @@
 import { NgModule }          from '@angular/core';
 
 import { SharedModule,
-         PipesModule }       from './modules';
+         GeneralPipesModule,
+         CountriesPipesModule }       from './modules';
 
 import { AppComponent }      from './app.component';
 
 const modules = [
     SharedModule,
-    PipesModule
+    GeneralPipesModule,
+    CountriesPipesModule
 ];
 
 const components = [
@@ -22,7 +24,8 @@ const providers = [];
 
 @NgModule({
     exports: [
-        PipesModule
+        GeneralPipesModule,
+        CountriesPipesModule
     ],
     declarations: [
       ...components,

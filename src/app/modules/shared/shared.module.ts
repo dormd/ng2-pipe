@@ -3,13 +3,11 @@ import { NgModule }         from '@angular/core';
 import { FormsModule }      from '@angular/forms';
 import { HttpModule }       from '@angular/http';
          
-import { COUNTRIES_DATA,
-         LANGUAGES_DATA }   from './models';
-
 import { CountriesData,
          AnthemsData,
-         LanguagesData }    from '../../../assets/data';
-
+         LanguagesData,
+         COUNTRIES_DATA,
+         LANGUAGES_DATA }    from './models';
 
 const myExports = [];
 

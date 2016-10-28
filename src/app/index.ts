@@ -1,2 +1,3 @@
-export * from './modules/pipes/pipes.module';
+export * from './modules/general-pipes/general-pipes.module';
+export * from './modules/countries-pipes/countries-pipes.module';
 export * from './app.module';
