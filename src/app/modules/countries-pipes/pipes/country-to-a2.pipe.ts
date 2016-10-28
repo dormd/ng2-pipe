@@ -1,14 +1,13 @@
 import { Pipe, PipeTransform, Type } from '@angular/core'; //LOCALE_ID
 import { DecimalPipe } from '@angular/common';
 
-import { A2ToCapital } from './data/a2-to-capital'
-
 @Pipe({
-    name: 'a2ToCapital'
+    name: 'countryToA2'
 })
 
-export class A2ToCapitalPipe implements PipeTransform {
+export class CountryToA2Pipe implements PipeTransform {
     transform(value: any, args: any[]): any {
-        return A2ToCapital[value] || '';
+        return '';
+        // return CountryToA2[value] || '';
     } 
 } 

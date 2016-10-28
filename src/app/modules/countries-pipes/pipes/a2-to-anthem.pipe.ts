@@ -1,5 +1,5 @@
 import { Inject, Pipe, PipeTransform } from '@angular/core';
-import { ANTHEMS_DATA, Anthems, IAnthem } from '../../../models';
+import { ANTHEMS_DATA, Anthems, IAnthem } from '../../shared/models';
 
 @Pipe({
     name: 'a2ToAnthem'
