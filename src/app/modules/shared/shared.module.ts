@@ -7,7 +7,8 @@ import { CountriesData,
          AnthemsData,
          LanguagesData,
          COUNTRIES_DATA,
-         LANGUAGES_DATA }    from './models';
+         LANGUAGES_DATA,
+         ANTHEMS_DATA }     from './models';
 
 const myExports = [];
 
@@ -20,6 +21,7 @@ const modules = [
 const providers = [
     { provide: COUNTRIES_DATA, useValue: CountriesData },
     { provide: LANGUAGES_DATA, useValue: LanguagesData },
+    { provide: ANTHEMS_DATA, useValue: AnthemsData },
 ];
 
 const components = [];
