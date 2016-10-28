@@ -1,5 +1,8 @@
 # Ng2Pipe
-in a development
+The rich angular 2 pipes mall.
+
+Used by [ng2-countries](https://github.com/dormd/ng2-countries).
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
 
 ## Development server
