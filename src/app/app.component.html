@@ -1,1 +1,228 @@
-Ng2-Pipe
+<div class="container">
+  <div class='pipe-group'>
+  
+    <div class="row">
+        <h2>Country pipes</h2>
+        <p>
+            The examples written for:
+        </p>
+
+        <p>
+            Country name: Israel
+        </p>
+
+        <p>
+            Alpha 2 (iso_3166_1_alpha2): IL
+        </p>
+    </div>
+
+    <article class="row pipe">  
+        <h3>Country Anthem - a2ToAnthem</h3>
+
+        <div class='pipe-example'>
+            <pre>IL | a2ToAnthem</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToAnthem }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country name - a2ToCountry</h3>
+
+        <div class='pipe-example'>
+            <h4>Default: common name</h4>
+            <pre>IL | a2ToCountry</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToCountry }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>Official name</h4>          
+            <pre>IL | a2ToCountry: [ 'official' ]</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToCountry: [ 'official' ] }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>Native name - Default</h4>
+            <pre>IL | a2ToCountry: [ 'native' ]</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToCountry: [ 'native' ] }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>Native name - Specific language - by ISO 639-3 language code</h4>
+            <pre>IL | a2ToCountry: [ 'native', 'ara' ]</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToCountry: [ 'native', 'ara' ] }}</pre>
+            </div>
+        </div>      
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country Capital - a2ToCapital</h3>
+
+        <div class='pipe-example'>
+            <pre>IL | a2ToCapital</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToCapital }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country Continent - a2ToContinent</h3>
+
+        <div class='pipe-example'>
+            <pre>IL | a2ToContinent</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToContinent }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country Area - a2ToArea</h3>
+
+        <div class='pipe-example'>
+            <h4>Regular number</h4>                    
+            <pre>IL | a2ToArea</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToArea }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>With Comma style pipe</h4>          
+            <pre>IL | a2ToArea | commaStyle</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToArea | commaStyle }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country Population - a2ToPopulation</h3>
+
+        <div class='pipe-example'>
+            <h4>Regular number</h4>          
+            <pre>IL | a2ToPopulation</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToPopulation }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>With Comma style pipe</h4>          
+            <pre>IL | a2ToPopulation | commaStyle</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToPopulation | commaStyle }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country Wiki Link - a2ToWikiLink</h3>
+
+        <div class='pipe-example'>
+            <pre>IL | a2ToWikiLink</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'IL' | a2ToWikiLink }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Country alpha 3 (iso_3166_1_alpha3) to alpha 2 - a3ToA2</h3>
+
+        <div class='pipe-example'>
+            <pre>ISR | a3ToA2</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 'ISR' | a3ToA2 }}</pre>
+            </div>
+        </div>
+    </article>   
+  </div>
+
+  <div class='pipe-group'>
+    <div class="row">
+      <h2>General pipes</h2>
+    </div>
+
+    <article class="row pipe">  
+        <h3>Comma Style - commaStyle</h3>
+
+        <div class='pipe-example'>
+            <pre>123456789 | commaStyle</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 123456789 | commaStyle }}</pre>
+            </div>
+        </div>
+    </article>
+
+    <article class="row pipe">  
+        <h3>Bytes to Mega-bytes - bytesToMBs</h3>
+
+        <div class='pipe-example'>
+            <pre>5389564 | bytesToMBs</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 5389564 | bytesToMBs }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>With Comma style pipe</h4>          
+            <pre>5389564 | bytesToMBs | commaStyle</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 5389564 | bytesToMBs | commaStyle }}</pre>
+            </div>
+        </div>
+
+        <div class='pipe-example'>
+            <h4>With Comma style pipe</h4>          
+            <pre>1024000000000 | bytesToMBs | commaStyle</pre> 
+
+            <div>
+                Result:
+                <pre>{{ 1024000000000 | bytesToMBs | commaStyle }}</pre>
+            </div>
+        </div>
+    </article>
+  </div>       
+</div>
