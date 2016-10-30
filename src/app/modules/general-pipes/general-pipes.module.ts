@@ -6,6 +6,7 @@ import { BytesToMBsPipe,
          SafePipe, }         from './pipes';
 
 const pipes = [
+    BytesToMBsPipe,
     MapToArrayPipe,
     CommaStylePipe,
     SafePipe
