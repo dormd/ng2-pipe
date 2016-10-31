@@ -1,5 +1,6 @@
 # Ng2Pipe
 The rich angular 2 pipes mall.
+The project use dataset of countries from [countries-data](https://github.com/dormd/countries-data)
 
 Used by [ng2-countries](https://github.com/dormd/ng2-countries).
 
@@ -10,13 +11,124 @@ You can see how fun to use this npm in our [Demo Application](https://dormd.gith
 
 ## Table of Contents
 * [Demo app](#demo-app)
-* [List of Pipes](#list-of-pipes)
+* [Countries Pipes](#countries-pipes)
+* [Ganeral Pipes](#general-pipes)
 * [Development server](#development-server)
 * [Build](#build)
 * [Deploying to Github Pages](#deploying-to-github-pages)
 
-## List of Pipes
-Soon...
+## Introduction
+The pipes work with iso_3166_1_alpha2 (a2) countries codes.
+
+## Countries Pipes
+**The examples written for Israel (IL)**
+
+### Country Anthem - a2ToAnthem
+```javascript
+IL | a2ToAnthem
+```
+Result: ```https://commons.wikimedia.org/wiki/File%3AHatikvah instrumental.ogg?embedplayer=yes```
+
+### Country name - a2ToCountry
+Default: common name
+```javascript
+IL | a2ToCountry
+```
+Result: ```Israel```
+
+#### Official name
+```javascript
+IL | a2ToCountry: [ 'official' ]
+```
+Result: ```State of Israel```
+
+#### Native name - Default
+```javascript
+IL | a2ToCountry: [ 'native' ]
+```
+Result: ```ישראל```
+
+#### Native name - Specific language - by ISO 639-3 language code
+```javascript
+IL | a2ToCountry: [ 'native', 'ara' ]
+```
+Result: ```إسرائيل```
+
+### Country Capital - a2ToCapital
+```javascript
+IL | a2ToCapital
+```
+Result: ```Jerusalem```
+
+### Country Continent - a2ToContinent
+```javascript
+IL | a2ToContinent
+```
+Result: ```Asia```
+
+### Country Area - a2ToArea
+#### Regular number
+```javascript
+IL | a2ToArea
+```
+Result: ```20770```
+
+#### With Comma style pipe
+```javascript
+IL | a2ToArea | commaStyle
+```
+Result: ```20,770```
+
+### Country Population - a2ToPopulation
+#### Regular number
+```javascript
+IL | a2ToPopulation
+```
+Result: ```8597260```
+
+#### With Comma style pipe
+```javascript
+IL | a2ToPopulation | commaStyle
+```
+Result: ```8,597,260```
+
+### Country Wiki Link - a2ToWikiLink
+```javascript
+IL | a2ToWikiLink
+```
+Result: ```https://wikipedia.org/wiki/Israel```
+
+### Country alpha 3 (iso_3166_1_alpha3) to alpha 2 - a3ToA2
+```javascript
+ISR | a3ToA2
+```
+Result: ```IL```
+
+## General pipes
+### Comma Style - commaStyle
+```javascript
+123456789 | commaStyle
+```
+Result: ```123,456,789```
+
+### Bytes to Mega-bytes - bytesToMBs
+#### Regular use
+```javascript
+5389564 | bytesToMBs
+```
+Result: ```5.14```
+
+#### With Comma style pipe (1)
+```javascript
+5389564 | bytesToMBs | commaStyle
+```
+Result: ```5.14```
+
+#### With Comma style pipe (2)
+```javascript
+1024000000000 | bytesToMBs | commaStyle
+```
+Result: ```976,562.50```
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
