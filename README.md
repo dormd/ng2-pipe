@@ -12,7 +12,27 @@ You can see how fun to use this npm in our [Demo Application](https://dormd.gith
 ## Table of Contents
 * [Demo app](#demo-app)
 * [Countries Pipes](#countries-pipes)
+  * Country Anthem - a2ToAnthem
+  * Country name - a2ToCountry
+    * Official name
+    * Native name - Default
+    * Native name - Specific language
+  * Country Capital - a2ToCapital
+  * Country Continent - a2ToContinent
+  * Country Area - a2ToArea
+    * Regular number
+    * With Comma style pipe
+  * Country Population - a2ToPopulation
+    * Regular number
+    * With Comma style pipe
+  * Country Wiki Link - a2ToWikiLink
+  * Country alpha 3 (iso_3166_1_alpha3) to alpha 2 - a3ToA2
 * [Ganeral Pipes](#general-pipes)
+  * Comma Style - commaStyle
+  * Bytes to Mega-bytes - bytesToMBs
+    * Regular use
+    * With Comma style pipe (1)
+    * With Comma style pipe (2)
 * [Development server](#development-server)
 * [Build](#build)
 * [Deploying to Github Pages](#deploying-to-github-pages)
