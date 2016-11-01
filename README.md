@@ -164,14 +164,10 @@ Result: ```976,562.50```
 import { NgModule } from '@angular/core';
 import { CountriesPipesModule, GeneralPipesModule } from 'ng2-pipe';
 
-const modules = [
-    CountriesPipesModule,
-    GeneralPipesModule
-];
-
 @NgModule({
     imports: [
-        ...modules
+        CountriesPipesModule,
+        GeneralPipesModule
     ]
 })
 export class SharedModule { }
