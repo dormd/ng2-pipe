@@ -11,7 +11,6 @@ You can see how fun to use this npm in our [Demo Application](https://dormd.gith
 
 ## Table of Contents
 * [Demo app](#demo-app)
-* [Introduction](#introduction)
 * [Installation](#installation)
 * [Countries Pipes](#countries-pipes)
   * Country Anthem - a2ToAnthem
@@ -40,15 +39,14 @@ You can see how fun to use this npm in our [Demo Application](https://dormd.gith
 * [Build](#build)
 * [Deploying to Github Pages](#deploying-to-github-pages)
 
-## Introduction
-The pipes work with iso_3166_1_alpha2 (a2) countries codes.
-
 ## Installation
 ```
 npm install ng2-pipe
 ```
 
 ## Countries Pipes
+The countries pipes work with iso_3166_1_alpha2 (a2) countries codes.
+
 **The examples written for Israel (IL)**
 
 ### Country Anthem - a2ToAnthem
