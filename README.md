@@ -11,6 +11,8 @@ You can see how fun to use this npm in our [Demo Application](https://dormd.gith
 
 ## Table of Contents
 * [Demo app](#demo-app)
+* [Introduction](#introduction)
+* [Installation](#installation)
 * [Countries Pipes](#countries-pipes)
   * Country Anthem - a2ToAnthem
   * Country name - a2ToCountry
@@ -33,12 +35,18 @@ You can see how fun to use this npm in our [Demo Application](https://dormd.gith
     * Regular use
     * With Comma style pipe (1)
     * With Comma style pipe (2)
+* [How to use](#how-to-use)
 * [Development server](#development-server)
 * [Build](#build)
 * [Deploying to Github Pages](#deploying-to-github-pages)
 
 ## Introduction
 The pipes work with iso_3166_1_alpha2 (a2) countries codes.
+
+## Installation
+```
+npm install ng2-pipe
+```
 
 ## Countries Pipes
 **The examples written for Israel (IL)**
@@ -50,7 +58,7 @@ IL | a2ToAnthem
 Result: ```https://commons.wikimedia.org/wiki/File%3AHatikvah instrumental.ogg?embedplayer=yes```
 
 ### Country name - a2ToCountry
-Default: common name
+#### Default: common name
 ```javascript
 IL | a2ToCountry
 ```
@@ -149,6 +157,33 @@ Result: ```5.14```
 1024000000000 | bytesToMBs | commaStyle
 ```
 Result: ```976,562.50```
+
+## How to use
+### Step1: NgModule file
+```javascript
+import { NgModule } from '@angular/core';
+import { CountriesPipesModule, GeneralPipesModule } from 'ng2-pipe';
+
+const modules = [
+    CountriesPipesModule,
+    GeneralPipesModule
+];
+
+@NgModule({
+    imports: [
+        ...modules
+    ]
+})
+export class SharedModule { }
+```
+
+### Step2: Component view file
+```html
+Specific country name: {{ IL | a2ToCountry }}
+Country name by parameter: {{ alpha2 | a2ToCountry }}
+Country anthem: <a [href]='alpha2 | a2ToWikiLink'></a>
+Specific country population: {{ IL | a2ToPopulation | commaStyle }}
+```
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
