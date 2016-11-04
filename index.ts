@@ -1,1 +1,1 @@
-export { GeneralPipesModule, CountriesPipesModule } from './src/app';
+export * from './src/app';
