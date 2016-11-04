@@ -1,5 +1,4 @@
 import { Inject, Pipe, PipeTransform } from '@angular/core';
-
 import * as _ from "lodash";
 
 import { COUNTRIES_DATA, Countries, ICountry } from '../../shared';

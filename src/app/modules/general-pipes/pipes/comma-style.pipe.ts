@@ -1,6 +1,8 @@
 import { Inject, Pipe, PipeTransform } from '@angular/core';
 import { COUNTRIES_DATA, Countries, ICountry } from '../../shared';
 
+import * as _ from 'lodash';
+
 @Pipe({
     name: 'commaStyle'
 })

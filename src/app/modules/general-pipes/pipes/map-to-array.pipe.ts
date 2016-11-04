@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import * as _ from 'lodash';
 
 interface IMap {
     [key: string]: any;
