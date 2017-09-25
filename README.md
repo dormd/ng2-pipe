@@ -1,10 +1,10 @@
 # Ng2Pipe
-The rich angular 2 pipes mall.
-The project use dataset of countries from [countries-data](https://github.com/dormd/countries-data)
+The rich Angular pipes mall.
+This project uses the dataset of countries from [countries-data](https://github.com/dormd/countries-data)
 
-Used by [ng2-countries](https://github.com/dormd/ng2-countries).
+This project used by [ng2-countries](https://github.com/dormd/ng2-countries).
 
-The project was generated with [angular-cli](https://github.com/angular/angular-cli).
+The project generated with [angular-cli](https://github.com/angular/angular-cli).
 
 ## Demo app
 You can see how fun it is to use this npm in the [Demo Application](https://dormd.github.io/ng2-pipe). 
